@@ -197,3 +197,42 @@ WHERE id = 102;
 SELECT * FROM dept;
 
 SELECT * FROM teacher;
+
+-- alter command
+
+ALTER TABLE student2
+ADD COLUMN age INT;
+
+SELECT * FROM student2;
+
+ALTER TABLE student2
+DROP COLUMN age;
+
+SELECT * FROM student2;
+
+ALTER TABLE student2
+ADD COLUMN age INT NOT NULL DEFAULT 19;
+
+SELECT * FROM student2;
+
+ALTER TABLE student2
+MODIFY COLUMN age VARCHAR(2);
+
+SELECT * FROM student2;
+
+ALTER TABLE student2
+CHANGE age studentAge INT;
+
+SELECT * FROM student2;
+
+ALTER TABLE student2
+DROP COLUMN studentAge;
+
+SELECT * FROM student2;
+
+ALTER TABLE student2
+RENAME TO Student;
+
+SELECT * FROM Student;
+
+USE college2;
