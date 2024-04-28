@@ -236,3 +236,24 @@ RENAME TO Student;
 SELECT * FROM Student;
 
 USE college2;
+
+ALTER TABLE Student
+RENAME TO student2;
+
+SELECT * FROM student2;
+
+TRUNCATE TABLE student2;
+
+SELECT * FROM student2;
+
+INSERT INTO student2
+(rollNo, name, marks, grade, city)
+VALUES
+(101, "Anil", 78, "C", "pune"),
+(102, "bhumika", 93, "A", "mumbai"),
+(103, "chetan", 85, "B", "mumbai"),
+(104, "dhruv", 94, "A", "delhi"),
+(105, "emanuel", 12, "F", "delhi"),
+(106, "farah", 82, "B", "delhi");
+
+SELECT * FROM student2;
