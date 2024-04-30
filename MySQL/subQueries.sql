@@ -9,7 +9,11 @@ SELECT fullName, marks
 FROM student2
 WHERE marks > 88.5;
 
---Sub Query
+-- Sub Query
 SELECT fullName, marks
 FROM student2
-WHERE marks >  
+WHERE marks > 
+(
+SELECT AVG(marks)
+FROM student2
+);
