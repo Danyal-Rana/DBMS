@@ -88,3 +88,23 @@ CREATE TABLE employee (
     name VARCHAR(50),
     manager_id int
 );
+
+INSERT INTO employee
+(id, name, manager_id)
+VALUES
+(101, "ADAM", 103),
+(102, "bob", 104),
+(103, "cesay", NULL),
+(104, "donald", 103);
+
+SELECT * FROM employee;
+
+SELECT *
+FROM employee as a
+JOIN employee as b
+WHERE a.id = b.manager_id;
+
+SELECT a.name, b.name
+FROM employee as a
+JOIN employee as b
+WHERE a.id = b.manager_id;
