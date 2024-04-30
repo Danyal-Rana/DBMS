@@ -108,3 +108,16 @@ SELECT a.name, b.name
 FROM employee as a
 JOIN employee as b
 WHERE a.id = b.manager_id;
+
+
+-- UNION
+
+USE college3;
+
+SELECT name FROM employee
+UNION
+SELECT name FROM  employee;
+
+SELECT name FROM employee
+UNION ALL
+SELECT name FROM employee;
