@@ -48,3 +48,43 @@ SELECT *
 FROM student4 as s
 RIGHT JOIN course4 as c
 ON s.id = c.id;
+
+-- now FULL JOIN using both left and right JOIN
+SELECT *
+FROM student4 as s
+LEFT JOIN course4 as c
+ON s.id = c.id
+UNION
+SELECT *
+FROM student4 as s
+RIGHT JOIN course4 as c
+ON s.id = c.id;
+
+-- right and left Exclusive JOIN
+SELECT *
+FROM student4 as s
+LEFT JOIN course4 as c
+ON s.id = c.id
+WHERE c.id IS NULL;
+
+SELECT *
+FROM student4 as s
+RIGHT JOIN course4 as c
+ON s.id = c.id
+WHERE s.id IS NULL;
+
+-- full Exclusive JOIN
+
+
+
+
+
+
+
+
+-- self join
+CREATE TABLE employee (
+	id INT PRIMARY KEY,
+    name VARCHAR(50),
+    manager_id int
+);
