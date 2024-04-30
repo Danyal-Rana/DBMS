@@ -38,3 +38,13 @@ SELECT *
 FROM student4 as s
 INNER JOIN course4 as c
 ON s.id = c.id;
+
+SELECT *
+FROM student4 as s
+LEFT JOIN course4 as c
+ON s.id = c.id;
+
+SELECT *
+FROM student4 as s
+RIGHT JOIN course4 as c
+ON s.id = c.id;
