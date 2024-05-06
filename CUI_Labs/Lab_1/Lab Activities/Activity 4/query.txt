@@ -1,0 +1,1 @@
+π name, year, rank, genre (σ year>2000 ∧ rank>6 (σ id = movie_id (movies⨯movies_genres) ) )

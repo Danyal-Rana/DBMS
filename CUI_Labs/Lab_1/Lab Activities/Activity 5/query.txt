@@ -1,0 +1,3 @@
+σ movies_directors.director_id = directors.id ∧ year > 2000 ∧ rank > 6
+((σ id = movies_directors.movie_id
+((σ id = movie_id (movies x movies_genres))x movies_directors)) x directors)

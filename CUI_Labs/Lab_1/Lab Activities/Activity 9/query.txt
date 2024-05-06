@@ -1,0 +1,2 @@
+π actors.first_name,actors.last_name (σ roles.role='Doctor' ((ρid←actor_id
+(roles)) ⨝ actors))

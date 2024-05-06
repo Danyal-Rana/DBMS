@@ -1,0 +1,5 @@
+π first_name, last_name actors
+-
+π actors.first_name, actors.last_name
+σ genre='Action' ((σ roles.actor_id = actors.id (roles ⨯ actors)) ⨝
+movies_genres)

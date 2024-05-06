@@ -1,0 +1,1 @@
+π first_name, last_name (σ(gender='F')(actors))

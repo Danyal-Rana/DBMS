@@ -1,0 +1,1 @@
+π name, year, rank (σ year>2000∧rank>6(movies))

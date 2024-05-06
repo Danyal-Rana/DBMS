@@ -1,0 +1,1 @@
+π name (σ(year > 2000 AND rank > 8 AND genre='Action')(movies ⨝ movies_genres))
