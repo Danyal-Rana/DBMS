@@ -1,1 +1,2 @@
-DESCRIBE departments;
+SELECT DISTINCT job_id
+FROM EMPLOYEES;
